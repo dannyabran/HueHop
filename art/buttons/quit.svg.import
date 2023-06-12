@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ceousmbrf48rg"
+path="res://.godot/imported/quit.svg-b2d9be1cdaeb93d21998609887e052ee.res"
+
+[deps]
+
+source_file="res://art/buttons/quit.svg"
+dest_files=["res://.godot/imported/quit.svg-b2d9be1cdaeb93d21998609887e052ee.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

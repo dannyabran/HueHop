@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpi8uah1cbix2"]
+
+[ext_resource type="Script" path="res://palt.gd" id="1_8e1k6"]
+[ext_resource type="Texture2D" uid="uid://c5oxtvrila4kc" path="res://Tile_set_2.png" id="2_1t2xn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gtu3k"]
+size = Vector2(96, 32)
+
+[node name="platfrom" type="AnimatableBody2D"]
+sync_to_physics = false
+script = ExtResource("1_8e1k6")
+
+[node name="Platform" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gtu3k")
+
+[node name="PlatformS" type="Sprite2D" parent="Platform"]
+position = Vector2(0, 0.25)
+scale = Vector2(1.65517, 1.65789)
+texture = ExtResource("2_1t2xn")

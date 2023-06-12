@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ckj6ptnt7umpy"
+path="res://.godot/imported/restart.svg-c072dc9a9f2c80d942f8b3c6788acab7.res"
+
+[deps]
+
+source_file="res://art/buttons/restart.svg"
+dest_files=["res://.godot/imported/restart.svg-c072dc9a9f2c80d942f8b3c6788acab7.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

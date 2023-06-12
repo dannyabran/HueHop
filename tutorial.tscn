@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbeu1el74qqdu"]
+
+[ext_resource type="Script" path="res://tutorial.gd" id="1_0tfj5"]
+[ext_resource type="PackedScene" uid="uid://cpi8uah1cbix2" path="res://palt.tscn" id="1_nbi13"]
+[ext_resource type="PackedScene" uid="uid://bksibx6lmwux5" path="res://player.tscn" id="2_irvfs"]
+[ext_resource type="PackedScene" uid="uid://xrwey4r126g7" path="res://pause_tutorial.tscn" id="4_0sjd6"]
+
+[node name="Tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0tfj5")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -13.0
+offset_right = 934.0
+offset_bottom = 518.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="plat" parent="Panel" instance=ExtResource("1_nbi13")]
+position = Vector2(145, 347)
+
+[node name="Player" parent="." instance=ExtResource("2_irvfs")]
+position = Vector2(145, 274)
+
+[node name="Jumpin" type="AudioStreamPlayer2D" parent="Player"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(631, 363)
+zoom = Vector2(0.4, 0.4)
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseTutorial" parent="CanvasLayer" instance=ExtResource("4_0sjd6")]
+
+[connection signal="game_paused" from="." to="CanvasLayer/PauseTutorial" method="_on_tutorial_game_paused"]

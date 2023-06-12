@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dns1wkt1mwqjd"
+path="res://.godot/imported/start.svg-bc052c6841bc1eab0d3876c7c0c48ecb.res"
+
+[deps]
+
+source_file="res://art/buttons/start.svg"
+dest_files=["res://.godot/imported/start.svg-bc052c6841bc1eab0d3876c7c0c48ecb.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

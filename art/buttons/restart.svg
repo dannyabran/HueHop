@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 434.34 469.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Pixelbroidery, Pixelbroidery;
+        font-size: 33.6px;
+      }
+
+      .cls-2 {
+        fill: #221f72;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="m304.17,399.87c-33.66,20.8-70.74,31.35-107.56,32.52l-1.56-57.18c27.09-.85,54.36-8.62,79.11-23.91,75.03-46.37,98.48-144.43,52.38-219.01l48.86-30.2c62.68,101.41,30.79,234.73-71.22,297.79Z"/>
+  <text class="cls-1" transform="translate(365.7 229.3) rotate(98.39)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-1" transform="translate(362.39 251.61) rotate(105.38)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-1" transform="translate(356.99 271.38) rotate(112.05) skewX(.01)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-1" transform="translate(349.33 290.38) rotate(118.74) skewX(.02)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(339.57 308.41) rotate(125.79) skewX(.02)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(326.42 326.71) rotate(133.14) skewX(.02)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-1" transform="translate(310.96 343.17) rotate(140.1) skewX(.02)"><tspan x="0" y="0">T</tspan></text>
+</svg>

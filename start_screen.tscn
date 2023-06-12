@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=3 uid="uid://bhx2644sg57tb"]
+
+[ext_resource type="Script" path="res://startScreen.gd" id="1_rgru5"]
+[ext_resource type="FontFile" uid="uid://2apr6dgaedyx" path="res://Pixelbroidery-0n0G.ttf" id="2_1lj8q"]
+[ext_resource type="Texture2D" uid="uid://d1811m6ur8x8f" path="res://art/buttons/start game normal.png" id="3_tb0ow"]
+[ext_resource type="Texture2D" uid="uid://2jp8f2xb8kod" path="res://art/buttons/start game hover.png" id="4_6ekki"]
+[ext_resource type="BitMap" uid="uid://dns1wkt1mwqjd" path="res://art/buttons/start.svg" id="5_3jkhi"]
+[ext_resource type="Texture2D" uid="uid://dig2b3r3vqlic" path="res://art/buttons/tutorial normal.png" id="6_e1hpk"]
+[ext_resource type="Texture2D" uid="uid://65mkbrkln22o" path="res://art/buttons/tutorial hover.png" id="7_mr3f3"]
+[ext_resource type="BitMap" uid="uid://ckj6ptnt7umpy" path="res://art/buttons/restart.svg" id="8_ne3i4"]
+[ext_resource type="Texture2D" uid="uid://shb0cbr0vqmw" path="res://art/buttons/quit normal.png" id="9_jqnwe"]
+[ext_resource type="Texture2D" uid="uid://ca70jevgk777e" path="res://art/buttons/quit hover.png" id="10_jxc8h"]
+[ext_resource type="BitMap" uid="uid://ceousmbrf48rg" path="res://art/buttons/quit.svg" id="11_n1m7h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3wxo"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Start_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rgru5")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 812.0
+offset_bottom = 568.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_c3wxo")
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 40.0
+offset_top = 98.0
+offset_right = 1239.0
+offset_bottom = 214.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_1lj8q")
+theme_override_font_sizes/font_size = 120
+text = "Hue Hop"
+horizontal_alignment = 1
+
+[node name="Start" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 451.0
+offset_top = 222.0
+offset_right = 828.0
+offset_bottom = 633.0
+texture_normal = ExtResource("3_tb0ow")
+texture_hover = ExtResource("4_6ekki")
+texture_click_mask = ExtResource("5_3jkhi")
+
+[node name="Tutorial" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 467.0
+offset_top = 282.0
+offset_right = 889.0
+offset_bottom = 674.0
+texture_normal = ExtResource("6_e1hpk")
+texture_hover = ExtResource("7_mr3f3")
+texture_click_mask = ExtResource("8_ne3i4")
+
+[node name="Quit" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 425.0
+offset_top = 282.0
+offset_right = 818.0
+offset_bottom = 674.0
+texture_normal = ExtResource("9_jqnwe")
+texture_hover = ExtResource("10_jxc8h")
+texture_click_mask = ExtResource("11_n1m7h")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 358)
+zoom = Vector2(0.4, 0.4)
+
+[connection signal="pressed" from="Panel/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="Panel/Quit" to="." method="_on_quit_pressed"]

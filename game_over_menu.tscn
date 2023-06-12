@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://x731w7k42kf4"]
+
+[ext_resource type="Script" path="res://game_over_menu.gd" id="1_w00ky"]
+[ext_resource type="FontFile" uid="uid://2apr6dgaedyx" path="res://Pixelbroidery-0n0G.ttf" id="2_6br2c"]
+[ext_resource type="Texture2D" uid="uid://b1f1lg8gr5ay0" path="res://art/buttons/Restart1.png" id="3_qr6xy"]
+[ext_resource type="Texture2D" uid="uid://bmjbsdalfpi18" path="res://art/buttons/Restart2.png" id="4_gjqmg"]
+[ext_resource type="BitMap" uid="uid://ckj6ptnt7umpy" path="res://art/buttons/restart.svg" id="5_d4fvh"]
+[ext_resource type="Texture2D" uid="uid://bqlpsxaa5hsjl" path="res://art/buttons/start menu1.png" id="6_dcs46"]
+[ext_resource type="Texture2D" uid="uid://bex86lpv7ptcc" path="res://art/buttons/start menu2.png" id="7_praov"]
+[ext_resource type="BitMap" uid="uid://dns1wkt1mwqjd" path="res://art/buttons/start.svg" id="8_o7pw1"]
+[ext_resource type="Texture2D" uid="uid://shb0cbr0vqmw" path="res://art/buttons/quit normal.png" id="9_5fyf1"]
+[ext_resource type="Texture2D" uid="uid://ca70jevgk777e" path="res://art/buttons/quit hover.png" id="10_20ui1"]
+[ext_resource type="BitMap" uid="uid://ceousmbrf48rg" path="res://art/buttons/quit.svg" id="11_ta08j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rlq0"]
+bg_color = Color(0.376471, 0.376471, 0.376471, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="GameOverMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w00ky")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.0
+offset_top = -107.0
+offset_right = 363.0
+offset_bottom = 325.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.491071, 0.491071)
+theme_override_styles/panel = SubResource("StyleBoxFlat_5rlq0")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 142.546
+offset_top = 28.5091
+offset_right = 382.546
+offset_bottom = 79.5091
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_6br2c")
+theme_override_font_sizes/font_size = 50
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="FinalScore" type="RichTextLabel" parent="Panel"]
+layout_mode = 2
+offset_left = 156.8
+offset_top = 97.7455
+offset_right = 356.8
+offset_bottom = 120.745
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_6br2c")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+
+[node name="Restart" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 152.728
+offset_top = 166.982
+offset_right = 572.728
+offset_bottom = 558.982
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("3_qr6xy")
+texture_hover = ExtResource("4_gjqmg")
+texture_click_mask = ExtResource("5_d4fvh")
+
+[node name="StartMenu" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 142.546
+offset_top = 130.327
+offset_right = 519.546
+offset_bottom = 541.327
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("6_dcs46")
+texture_hover = ExtResource("7_praov")
+texture_click_mask = ExtResource("8_o7pw1")
+
+[node name="Quit" type="TextureButton" parent="Panel"]
+layout_mode = 2
+offset_left = 126.255
+offset_top = 166.982
+offset_right = 519.255
+offset_bottom = 558.982
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("9_5fyf1")
+texture_hover = ExtResource("10_20ui1")
+texture_click_mask = ExtResource("11_ta08j")
+
+[connection signal="pressed" from="Panel/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Panel/StartMenu" to="." method="_on_start_menu_pressed"]
+[connection signal="pressed" from="Panel/Quit" to="." method="_on_quit_pressed"]

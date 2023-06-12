@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.39 488.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a91a1e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Pixelbroidery, Pixelbroidery;
+        font-size: 33.71px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m77.19,51.5C43.53,72.3,17.51,100.75,0,133.17l50.44,26.97c12.87-23.85,32.02-44.77,56.76-60.07,75.03-46.37,173.22-23.51,219.32,51.08l48.86-30.2C312.71,19.53,179.2-11.56,77.19,51.5Z"/>
+  <text class="cls-2" transform="translate(95.28 88.6) rotate(-29.63)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-2" transform="translate(113.06 78.45) rotate(-23.03) skewX(-.08)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(131.85 70.34) rotate(-16.07) skewX(-.16)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-2" transform="translate(153.51 64.06) rotate(-8.73) skewX(-.23)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-2" transform="translate(175.79 60.66) rotate(-1.7) skewX(-.28)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(196.39 60.26) rotate(3.34) skewX(-.31)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-2" transform="translate(206.42 60.45) rotate(9.02) skewX(-.33)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-2" transform="translate(230.72 64.41) rotate(16.28) skewX(-.34)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-2" transform="translate(250.33 69.94) rotate(23.59) skewX(-.33)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-2" transform="translate(272.8 79.85) rotate(31) skewX(-.29)"><tspan x="0" y="0">U</tspan></text>
+</svg>

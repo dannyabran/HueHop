@@ -1,0 +1,29 @@
+~ main
+
+Player: [next=auto]Hello welcome to the tutorial.
+Player: To start moving lets click on the left arrow key.
+if global.left == true
+	Player: Good job, now click on the right arrow key.
+else 
+	Player: You need to press the key in order to continue.
+if global.right == true
+	Player: Nice work, now press the spacebar to jump.
+if global.jump == true
+	Player: [next=auto]Its time to change colors.
+	Player: [next=auto]In order to collide with the diferent platforms you need to match their color with yours.
+	Player: So lets change to red by clicking the "A" key or push the right analog stick to the left.
+if global.red == true
+	Player: Great! Now is time to go blue, by clicking the "W" key or push the right analog stick up.
+else 
+	Player: You need to press the key in order to continue.
+if global.blue == true
+	Player: Awsome! Now lets turn yellow, by clicking the "D" key or push the right analog stick to the right.
+else 
+	Player: You need to press the key in order to continue. 
+if global.yellow == true
+	Player: [next=auto]Incredible! Now You know everything you need to play the game.
+	Player: [next=auto]Have Fun!
+else 
+	Player: You need to press the key in order to continue. 
+
+=> END

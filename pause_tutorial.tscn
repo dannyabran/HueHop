@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://xrwey4r126g7"]
+
+[ext_resource type="Script" path="res://pause_tutorial.gd" id="1_kcnv2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtccu"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="PauseTutorial" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kcnv2")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -100.0
+offset_right = 86.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gtccu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_right = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Pause"
+horizontal_alignment = 1
+
+[node name="Restart" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Restart"
+
+[node name="Quit to Menu" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Quit to Menu"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Quit to Menu" to="." method="_on_quit_to_menu_pressed"]

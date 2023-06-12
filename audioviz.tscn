@@ -1,0 +1,663 @@
+[gd_scene load_steps=3 format=3 uid="uid://jrqykjxu5xvs"]
+
+[ext_resource type="Script" path="res://audioviz.gd" id="1_gxt6s"]
+[ext_resource type="AudioStream" uid="uid://cmdjfbg5ngocl" path="res://for_DJ1.mp3" id="2_sarkf"]
+
+[node name="audioviz" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_right = 128.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gxt6s")
+
+[node name="mplayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_sarkf")
+autoplay = true
+bus = &"Music"
+
+[node name="background" type="TextureRect" parent="mplayer"]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 137.0
+offset_top = 169.0
+offset_right = 201.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Right" type="Control" parent="mplayer/background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Top" type="Control" parent="mplayer/background/Right"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = -74.0
+offset_top = 470.0
+offset_right = -14.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 470.0
+offset_right = 57.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 470.0
+offset_right = 125.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 470.0
+offset_right = 196.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 470.0
+offset_right = 267.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 470.0
+offset_right = 338.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 470.0
+offset_right = 406.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 470.0
+offset_right = 477.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 470.0
+offset_right = 549.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 470.0
+offset_right = 620.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 470.0
+offset_right = 688.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 699.0
+offset_top = 470.0
+offset_right = 759.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 470.0
+offset_right = 833.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 470.0
+offset_right = 904.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 912.0
+offset_top = 470.0
+offset_right = 972.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="mplayer/background/Right/Top"]
+layout_mode = 0
+offset_left = 983.0
+offset_top = 470.0
+offset_right = 1043.0
+offset_bottom = 475.0
+rotation = 3.14159
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="Bottom" type="Control" parent="mplayer/background/Right"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -32.0
+offset_right = 21.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = -124.0
+offset_top = -155.0
+offset_right = -64.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = -53.0
+offset_top = -155.0
+offset_right = 7.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = -155.0
+offset_right = 75.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 86.0
+offset_top = -155.0
+offset_right = 146.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 157.0
+offset_top = -155.0
+offset_right = 217.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = -155.0
+offset_right = 288.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = -155.0
+offset_right = 356.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 367.0
+offset_top = -155.0
+offset_right = 427.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 439.0
+offset_top = -155.0
+offset_right = 499.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 510.0
+offset_top = -155.0
+offset_right = 570.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 578.0
+offset_top = -155.0
+offset_right = 638.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 649.0
+offset_top = -155.0
+offset_right = 709.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 723.0
+offset_top = -155.0
+offset_right = 783.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 794.0
+offset_top = -155.0
+offset_right = 854.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 862.0
+offset_top = -155.0
+offset_right = 922.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="mplayer/background/Right/Bottom"]
+layout_mode = 0
+offset_left = 933.0
+offset_top = -155.0
+offset_right = 993.0
+offset_bottom = -150.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="Left" type="Control" parent="mplayer/background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Top" type="Control" parent="mplayer/background/Left"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = 464.0
+offset_right = -17.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 464.0
+offset_right = 54.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 464.0
+offset_right = 122.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 464.0
+offset_right = 193.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 464.0
+offset_right = 264.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 464.0
+offset_right = 335.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 464.0
+offset_right = 403.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 464.0
+offset_right = 474.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 464.0
+offset_right = 546.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 464.0
+offset_right = 617.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 464.0
+offset_right = 685.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 464.0
+offset_right = 756.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 464.0
+offset_right = 830.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 464.0
+offset_right = 901.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 909.0
+offset_top = 464.0
+offset_right = 969.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="mplayer/background/Left/Top"]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 464.0
+offset_right = 1040.0
+offset_bottom = 469.0
+rotation = 3.14159
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="Bottom" type="Control" parent="mplayer/background/Left"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = -120.0
+offset_top = -172.0
+offset_right = -60.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = -49.0
+offset_top = -172.0
+offset_right = 11.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = -172.0
+offset_right = 79.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = -172.0
+offset_right = 150.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = -172.0
+offset_right = 221.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = -172.0
+offset_right = 292.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = -172.0
+offset_right = 360.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = -172.0
+offset_right = 431.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 443.0
+offset_top = -172.0
+offset_right = 503.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 514.0
+offset_top = -172.0
+offset_right = 574.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 582.0
+offset_top = -172.0
+offset_right = 642.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 653.0
+offset_top = -172.0
+offset_right = 713.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 727.0
+offset_top = -172.0
+offset_right = 787.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 798.0
+offset_top = -172.0
+offset_right = 858.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 866.0
+offset_top = -172.0
+offset_right = 926.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="mplayer/background/Left/Bottom"]
+layout_mode = 0
+offset_left = 937.0
+offset_top = -172.0
+offset_right = 997.0
+offset_bottom = -167.0
+color = Color(0.419608, 0.419608, 0.419608, 1)
